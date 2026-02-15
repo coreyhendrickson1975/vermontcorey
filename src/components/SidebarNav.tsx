@@ -11,7 +11,6 @@ interface Project {
 const projects: Project[] = [
   { title: "Ghost Malls", slug: "ghost-malls" },
   { title: "RT 125", slug: "rt-125", ongoing: true },
-  { title: "Portraits", slug: "portraits" },
 ]
 
 interface SidebarNavProps {

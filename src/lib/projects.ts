@@ -34,13 +34,6 @@ export const projects: Project[] = [
       { src: "/images/RT125-5.jpg", alt: "RT 125" },
     ],
   },
-  {
-    title: "Portraits",
-    slug: "portraits",
-    images: [
-      { src: "/images/gallery-1.jpg", alt: "Portraits" },
-    ],
-  },
 ]
 
 export function getProject(slug: string): Project | undefined {
