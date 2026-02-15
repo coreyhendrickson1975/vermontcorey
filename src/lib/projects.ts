@@ -20,6 +20,9 @@ export const projects: Project[] = [
       { src: "/images/Ghost_Mall-3.jpg", alt: "Ghost Malls" },
       { src: "/images/Ghost_Mall-4.jpg", alt: "Ghost Malls" },
       { src: "/images/Ghost_Mall-5.jpg", alt: "Ghost Malls" },
+      { src: "/images/Ghost_Mall--6.jpg", alt: "Ghost Malls" },
+      { src: "/images/Ghost_Mall--7.jpg", alt: "Ghost Malls" },
+      { src: "/images/Ghost_Mall--8.jpg", alt: "Ghost Malls" },
     ],
   },
   {
@@ -37,6 +40,7 @@ export const projects: Project[] = [
       { src: "/images/RT125-8.jpg", alt: "RT 125" },
       { src: "/images/RT125-9.jpg", alt: "RT 125" },
       { src: "/images/RT125-10.jpg", alt: "RT 125" },
+      { src: "/images/RT125-11.jpg", alt: "RT 125" },
     ],
   },
 ]
