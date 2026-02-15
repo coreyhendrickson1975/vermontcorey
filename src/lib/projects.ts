@@ -32,6 +32,11 @@ export const projects: Project[] = [
       { src: "/images/RT125-3.jpg", alt: "RT 125" },
       { src: "/images/RT125-4.jpg", alt: "RT 125" },
       { src: "/images/RT125-5.jpg", alt: "RT 125" },
+      { src: "/images/RT125-6.jpg", alt: "RT 125" },
+      { src: "/images/RT125-7.jpg", alt: "RT 125" },
+      { src: "/images/RT125-8.jpg", alt: "RT 125" },
+      { src: "/images/RT125-9.jpg", alt: "RT 125" },
+      { src: "/images/RT125-10.jpg", alt: "RT 125" },
     ],
   },
 ]
