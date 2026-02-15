@@ -1,0 +1,31 @@
+---
+import BaseLayout from '../../../layouts/BaseLayout.astro';
+import { ImageViewer } from '../../../components/ImageViewer';
+import { projects, getProject } from '../../../lib/projects';
+
+export function getStaticPaths() {
+  const paths = [];
+  for (const project of projects) {
+    for (let i = 1; i <= project.images.length; i++) {
+      paths.push({
+        params: { slug: project.slug, photo: String(i) },
+        props: { project, photoIndex: i - 1 },
+      });
+    }
+  }
+  return paths;
+}
+
+const { project, photoIndex } = Astro.props;
+const projectTitle = `${project.title}${project.ongoing ? " (ongoing)" : ""}`;
+---
+
+<BaseLayout title={`${projectTitle} - ${photoIndex + 1}/${project.images.length} - Corey Hendrickson Fine Art`}>
+  <ImageViewer
+    client:load
+    images={project.images}
+    currentIndex={photoIndex}
+    projectSlug={project.slug}
+    projectTitle={projectTitle}
+  />
+</BaseLayout>

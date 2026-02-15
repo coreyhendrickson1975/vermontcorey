@@ -1,0 +1,6 @@
+---
+import { projects } from '../lib/projects';
+
+const firstProject = projects[0];
+return Astro.redirect(`/works/${firstProject.slug}/1`);
+---
