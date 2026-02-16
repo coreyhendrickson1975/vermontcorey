@@ -20,7 +20,11 @@ const { project, photoIndex } = Astro.props;
 const projectTitle = `${project.title}${project.ongoing ? " (ongoing)" : ""}`;
 ---
 
-<BaseLayout title={`${projectTitle} - ${photoIndex + 1}/${project.images.length} - Corey Hendrickson Fine Art`}>
+<BaseLayout
+  title={`${projectTitle} - ${photoIndex + 1}/${project.images.length} - Corey Hendrickson Fine Art`}
+  description={`${projectTitle} — fine art photography by Corey Hendrickson.`}
+  image={project.images[photoIndex].src}
+>
   <ImageViewer
     client:load
     images={project.images}

@@ -23,6 +23,13 @@ export const projects: Project[] = [
       { src: "/images/Ghost_Mall--6.jpg", alt: "Ghost Malls" },
       { src: "/images/Ghost_Mall--7.jpg", alt: "Ghost Malls" },
       { src: "/images/Ghost_Mall--8.jpg", alt: "Ghost Malls" },
+      { src: "/images/Ghost_Mall--9.jpg", alt: "Ghost Malls" },
+      { src: "/images/Ghost_Mall--10.jpg", alt: "Ghost Malls" },
+      { src: "/images/Ghost_Mall--11.jpg", alt: "Ghost Malls" },
+      { src: "/images/Ghost_Mall--12.jpg", alt: "Ghost Malls" },
+      { src: "/images/Ghost_Mall--13.jpg", alt: "Ghost Malls" },
+      { src: "/images/Ghost_Mall--14.jpg", alt: "Ghost Malls" },
+      { src: "/images/Ghost_Mall--15.jpg", alt: "Ghost Malls" },
     ],
   },
   {
