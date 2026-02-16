@@ -150,9 +150,6 @@ export function SidebarNav({ currentPath }: SidebarNavProps) {
           </nav>
         </div>
 
-        <p className="text-[9px] tracking-[0.15em] uppercase text-muted-foreground">
-          &copy;2026 Corey Hendrickson - All Rights Reserved
-        </p>
       </aside>
     </>
   )
