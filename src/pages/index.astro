@@ -1,6 +1,15 @@
 ---
+import BaseLayout from '../layouts/BaseLayout.astro';
 import { projects } from '../lib/projects';
 
-const firstProject = projects[0];
-return Astro.redirect(`/works/${firstProject.slug}/1`);
+const allImages = projects.flatMap((p) =>
+  p.images.map((img, i) => ({ slug: p.slug, photo: i + 1 }))
+);
 ---
+
+<BaseLayout title="Corey Hendrickson Fine Art">
+  <script define:vars={{ allImages }}>
+    const pick = allImages[Math.floor(Math.random() * allImages.length)];
+    window.location.replace(`/works/${pick.slug}/${pick.photo}`);
+  </script>
+</BaseLayout>
